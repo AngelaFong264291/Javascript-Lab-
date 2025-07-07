@@ -53,3 +53,23 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+// Practice Task 
+let user = "Enrolled Member";
+let message;
+
+switch (user) {
+    case "Employee":
+        message = "Access to Dietary Services";
+        break;
+    case "Enrolled Member":
+        message = "Access to Dietary Services and one-on-one interaction with a dietician";
+        break;
+    case "Subscriber":
+        message = "Partial access to facilitate Dietary Services only";
+        break;
+    default:
+        message = "Need to enroll or at least subscribe first to avail this facility";
+}
+
+console.log("Available Service: ", message)
